@@ -7,20 +7,25 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import gene.tumour
-
 
 class GeneTumourLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
-        # Load any other ZCML that is required for your tests.
-        # The z3c.autoinclude feature is disabled in the Plone fixture base
-        # layer.
+        import gene.tumour
+        import Products.DateRecurringIndex
+        import Products.CMFPlone
+        self.loadZCML(package=Products.CMFPlone)
         self.loadZCML(package=gene.tumour)
+        z2.installProduct(app, 'Products.DateRecurringIndex')
+
+    def tearDownZope(self, app):
+        z2.uninstallProduct(app, 'Products.DateRecurringIndex')
+
 
     def setUpPloneSite(self, portal):
+        applyProfile(portal, 'Products.CMFPlone:plone')
         applyProfile(portal, 'gene.tumour:default')
 
 
