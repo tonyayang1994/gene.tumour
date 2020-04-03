@@ -9,12 +9,6 @@
   <include file="validator.zcml"/>
   <include file="schedule.zcml"/>
 
-  <include package="z3c.jbot" file="meta.zcml" />
-  <browser:jbot
-      directory="overrides"
-      layer="gene.tumour.interfaces.IGeneTumourLayer"
-      />
-
   <browser:resourceDirectory
       name="gene.tumour"
       directory="static"
