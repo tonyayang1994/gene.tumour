@@ -1,0 +1,1140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-03-20 03:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: gene/tumour/browser/form.py:121
+msgid "${count} Item created"
+msgstr "${count} 条目已创建"
+
+#: gene/tumour/browser/form.py:292
+msgid "${count} Item edited"
+msgstr "${count} 条目已编辑"
+
+#: gene/tumour/browser/form.py:744
+msgid "${count} Item state changed"
+msgstr "${count} 条目转换状态"
+
+#: gene/tumour/browser/import.py:523
+msgid "${count} item(s) import failed."
+msgstr "${count} 条数据导入失败。"
+
+#: gene/tumour/browser/import.py:517
+msgid "${count} item(s) import successfully."
+msgstr "${count} 条数据导入成功。"
+
+#: gene/tumour/browser/templates/import.pt:130
+msgid "${failed_percent}% Failed (${failed_rate})"
+msgstr "${failed_percent}% 失败 (${failed_rate})"
+
+#: gene/tumour/browser/templates/import.pt:125
+msgid "${success_percent} Success (${success_rate})"
+msgstr "${success_percent} 成功 (${success_rate})"
+
+#: gene/tumour/browser/templates/search_view.pt:175
+msgid "* zero or more character, ? one character"
+msgstr "* 零个或多个字符, ? 一个字符"
+
+#: gene/tumour/browser/templates/search_view.pt:151
+msgid "1. Boolean expressions"
+msgstr "1.布尔表达式"
+
+#: gene/tumour/browser/templates/search_view.pt:164
+msgid "2. Parentheses"
+msgstr "2.括号"
+
+#: gene/tumour/browser/templates/search_view.pt:174
+msgid "3. Wild cards"
+msgstr "3.通配符"
+
+#: gene/tumour/browser/templates/search_view.pt:194
+msgid "4. Phrase search"
+msgstr "4.短语搜索"
+
+#: gene/tumour/browser/templates/search_view.pt:205
+msgid "5. Mixed together"
+msgstr "5.组合在一起"
+
+#: gene/tumour/browser/templates/search_view.pt:152
+msgid "A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'."
+msgstr "无操作符的单词序列表示 AND 操作。如搜索 'carpet python snakes' 将转化为 'carpet AND python AND snakes'。"
+
+#: gene/tumour/browser/templates/search_view.pt:152
+msgid "AND, OR, NOT(synonym a -)"
+msgstr "AND, OR, NOT(同义符号'-')"
+
+#: gene/tumour/browser/templates/search_view.pt:72
+msgid "Abort"
+msgstr "中止"
+
+#: gene/tumour/interfaces.py:306
+msgid "Absorbance 260/280"
+msgstr "吸光度260/280"
+
+#: gene/tumour/browser/templates/search_view.pt:479
+msgid "Action"
+msgstr "操作"
+
+#: gene/tumour/browser/templates/search_view.pt:392
+msgid "Actions"
+msgstr "操作"
+
+#: gene/tumour/browser/templates/search_view.pt:292
+msgid "Add NA data"
+msgstr "添加核酸数据"
+
+#: gene/tumour/browser/templates/search_view.pt:367
+msgid "Add Results data"
+msgstr "添加结果数据"
+
+#: gene/tumour/browser/versioning.py:16
+msgid "Add change notes"
+msgstr "添加备注"
+
+#: gene/tumour/browser/versioning.py:17
+msgid "Add change notes, note the notes cannot be changed."
+msgstr "添加备注，注意备注无法更改。"
+
+#: gene/tumour/browser/templates/search_view.pt:342
+msgid "Add detecting data"
+msgstr "添加检测数据"
+
+#: gene/tumour/browser/templates/search_view.pt:317
+msgid "Add library data"
+msgstr "添加文库数据"
+
+#: gene/tumour/browser/templates/search_view.pt:267
+msgid "Add sample data"
+msgstr "添加样本数据"
+
+#: gene/tumour/browser/templates/search_view.pt:18
+msgid "Advanced search instructions"
+msgstr "高级搜索用法"
+
+#: gene/tumour/interfaces.py:466
+msgid "After steps time must be greater than or equal to the previous steps time"
+msgstr "后一步骤时间必须大于等于前一步骤时间"
+
+#: gene/tumour/interfaces.py:144
+msgid "Age"
+msgstr "年龄"
+
+#: gene/tumour/browser/templates/search_view.pt:512
+msgid "Alert: delete data!"
+msgstr "警告︰删除数据！"
+
+#: gene/tumour/browser/templates/search_view.pt:33
+msgid "All"
+msgstr "全部"
+
+#: gene/tumour/browser/import.py:538
+msgid "An error occurred, and the operation aborted."
+msgstr "发生错误，操作中止。"
+
+#: gene/tumour/browser/form.py:477
+#: gene/tumour/browser/templates/import.pt:23
+#: gene/tumour/browser/templates/search_view.pt:58
+msgid "Analysis Results"
+msgstr "分析结果"
+
+#: gene/tumour/browser/templates/import.pt:78
+msgid "Back"
+msgstr "返回"
+
+#: gene/tumour/handlers.py:108
+#: gene/tumour/interfaces.py:129
+msgid "Barcode"
+msgstr "条码"
+
+#: gene/tumour/browser/form.py:59
+#: gene/tumour/browser/templates/import.pt:19
+#: gene/tumour/browser/templates/search_view.pt:48
+msgid "Blood Sample"
+msgstr "样本接收"
+
+#: gene/tumour/browser/form.py:150
+#: gene/tumour/browser/templates/search_view.pt:522
+#: gene/tumour/browser/versioning.py:52
+msgid "Cancel"
+msgstr "取消"
+
+#: gene/tumour/browser/form.py:600
+#: gene/tumour/browser/templates/search_view.pt:397
+#: gene/tumour/interfaces.py:1235
+msgid "Change Steps"
+msgstr "更改步骤"
+
+#: gene/tumour/browser/templates/search_view.pt:454
+msgid "Check error"
+msgstr "检查错误"
+
+#: gene/tumour/browser/templates/search_view.pt:451
+msgid "Check for data errors"
+msgstr "检查数据错误"
+
+#: gene/tumour/vocabulary.py:13
+msgid "Chemotherapy"
+msgstr "化疗"
+
+#: gene/tumour/browser/form.py:465
+#: gene/tumour/browser/templates/import.pt:22
+#: gene/tumour/browser/templates/search_view.pt:55
+msgid "Computer Detecting"
+msgstr "上机检测"
+
+#: gene/tumour/browser/templates/search_view.pt:519
+msgid "Confirm"
+msgstr "确认"
+
+#: gene/tumour/browser/import.py
+msgid "Constraint not satisfied"
+msgstr "约束不满足"
+
+#: gene/tumour/browser/templates/search_view.pt:165
+msgid "Control search order with parenthetical expressions"
+msgstr "用括号表达式控制搜索顺序"
+
+#: gene/tumour/profiles/default/controlpanel.xml
+msgid "Copy Number Variations Control Panel"
+msgstr "流产组织系统控制面板"
+
+#: gene/tumour/browser/templates/search_view.pt:122
+msgid "Creation time"
+msgstr "创建时间"
+
+#: gene/tumour/browser/restore.py:49
+#: gene/tumour/interfaces.py:1252
+msgid "Data compression"
+msgstr "数据压缩"
+
+#: gene/tumour/browser/templates/search_view.pt:425
+msgid "Delete Records"
+msgstr "删除记录"
+
+#: gene/tumour/browser/templates/backup.pt:35
+msgid "Depending of the number of tumour in your portal, it may take a <strong>really</strong> long time for the task to be done. Stay calm, be patient and check your logs for progress-information."
+msgstr "取决于站点中Tumour的数量，可能需要花费<strong>很长时间</strong>才能完成。请保持冷静，耐心等待，并检查进度信息日志。"
+
+#: gene/tumour/browser/templates/search_view.pt:332
+msgid "Detecting"
+msgstr "检测"
+
+#: gene/tumour/browser/templates/search_view.pt:195
+msgid "Double-quoted text implies phrase search"
+msgstr "双引号括起来的文本表示短语搜索"
+
+#: gene/tumour/browser/import.py:126
+#: gene/tumour/browser/templates/import.pt:66
+msgid "Dry run mode"
+msgstr "模拟执行模式"
+
+#: gene/tumour/interfaces.py:384
+msgid "ES instrument number"
+msgstr "ES仪器编号"
+
+#: gene/tumour/browser/templates/search_view.pt:297
+msgid "Edit NA data"
+msgstr "编辑核酸数据"
+
+#: gene/tumour/browser/templates/search_view.pt:372
+msgid "Edit Results data"
+msgstr "编辑结果数据"
+
+#: gene/tumour/browser/templates/search_view.pt:347
+msgid "Edit detecting data"
+msgstr "编辑检测数据"
+
+#: gene/tumour/browser/templates/search_view.pt:322
+msgid "Edit library data"
+msgstr "编辑文库数据"
+
+#: gene/tumour/browser/templates/search_view.pt:272
+msgid "Edit sample data"
+msgstr "编辑样本数据"
+
+#: gene/tumour/interfaces.py:83
+msgid "Email notification"
+msgstr "Email通知"
+
+#: gene/tumour/browser/import.py:180
+msgid "Excel data format error. Please correct it and retry. Error: expected ${expected} - got ${got}."
+msgstr "Excel 数据格式错误，请修正后重试。错误︰预期 ${expected} - 得到 ${got}。"
+
+#: gene/tumour/browser/templates/import.pt:42
+msgid "Excel file"
+msgstr "Excel 文件"
+
+#: gene/tumour/browser/import.py:195
+msgid "Execution results"
+msgstr "执行结果"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment abort"
+msgstr "实验中止"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment failed"
+msgstr "实验失败"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Experiment success"
+msgstr "实验成功"
+
+#: gene/tumour/browser/templates/search_view.pt:438
+msgid "Export OT Dilution"
+msgstr "导出OT稀释表"
+
+#: gene/tumour/browser/templates/search_view.pt:432
+msgid "Export Records"
+msgstr "导出记录"
+
+#: gene/tumour/browser/templates/search_view.pt:108
+#: gene/tumour/interfaces.py:279
+msgid "Extraction time"
+msgstr "提取时间"
+
+#: gene/tumour/browser/templates/search_view.pt:70
+msgid "Failed"
+msgstr "失败"
+
+#: gene/tumour/browser/form.py:491
+#: gene/tumour/browser/templates/search_view.pt:406
+#: gene/tumour/interfaces.py:1227
+msgid "Failed Redo"
+msgstr "失败重做"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Fallback private"
+msgstr "回退保密"
+
+#: gene/tumour/browser/import.py:173
+msgid "File type not supported."
+msgstr "不支持的文件类型。"
+
+#: gene/tumour/interfaces.py:113
+msgid "Filter condition"
+msgstr "过滤条件"
+
+#: gene/tumour/browser/import.py:132
+#: gene/tumour/browser/templates/import.pt:75
+msgid "Force all success"
+msgstr "必须全部成功"
+
+#: gene/tumour/browser/templates/search_view.pt:16
+msgid "Full-text search"
+msgstr "全文搜索"
+
+#: gene/tumour/browser/templates/search_view.pt:23
+msgid "Full-text search, Enter to submit"
+msgstr "全文搜索，回车提交"
+
+#: gene/tumour/interfaces.py:243
+msgid "Glass inspection(Percentage of tumor cells/tumor cells)"
+msgstr "玻片质检（肿瘤细胞含量/肿瘤细胞占比）"
+
+#: gene/tumour/interfaces.py:84
+msgid "If selected, enabled step change Email message notifications."
+msgstr "如果选中，启用步骤变更Email消息通知。"
+
+#: gene/tumour/interfaces.py:71
+msgid "If selected, the sent SMS notification to user."
+msgstr "如果选中，发送用户短信通知。"
+
+#: gene/tumour/browser/templates/import.pt:83
+msgid "Import"
+msgstr "导入"
+
+#: gene/tumour/browser/templates/import.pt:29
+msgid "Import Excel file"
+msgstr "导入Excel文件"
+
+#: gene/tumour/browser/templates/search_view.pt:287
+msgid "Import NA data"
+msgstr "导入核酸数据"
+
+#: gene/tumour/browser/templates/search_view.pt:362
+msgid "Import Results data"
+msgstr "导入结果数据"
+
+#: gene/tumour/browser/templates/search_view.pt:337
+msgid "Import detecting data"
+msgstr "导入检测数据"
+
+#: gene/tumour/browser/templates/search_view.pt:312
+msgid "Import library data"
+msgstr "导入文库数据"
+
+#: gene/tumour/browser/templates/search_view.pt:262
+msgid "Import sample data"
+msgstr "导入样本数据"
+
+#: gene/tumour/browser/import.py:386
+msgid "Import successful: ${sample_title} ${sample_value}; "
+msgstr "导入成功: ${sample_title} ${sample_value}; "
+
+#: gene/tumour/interfaces.py:151
+msgid "Inspection item"
+msgstr "检测项目"
+
+#: gene/tumour/interfaces.py:156
+msgid "Inspection method"
+msgstr "检测方法"
+
+#: gene/tumour/configure.zcml:36
+msgid "Installs the gene.tumour add-on."
+msgstr ""
+
+#: gene/tumour/browser/import.py:502
+msgid "Invalid import steps."
+msgstr "错误的导入步骤。"
+
+#: gene/tumour/browser/templates/search_view.pt:307
+msgid "Library"
+msgstr "文库"
+
+#: gene/tumour/browser/form.py:453
+#: gene/tumour/browser/templates/import.pt:21
+#: gene/tumour/browser/templates/search_view.pt:52
+msgid "Library Construction"
+msgstr "文库构建"
+
+#: gene/tumour/interfaces.py:330
+msgid "Library barcode"
+msgstr "Barcode"
+
+#: gene/tumour/interfaces.py:335
+msgid "Library concentration (NG/UL)"
+msgstr "文库浓度（ng/ul)"
+
+#: gene/tumour/interfaces.py:341
+msgid "Library construction operator"
+msgstr "文库构建操作人"
+
+#: gene/tumour/browser/templates/search_view.pt:112
+#: gene/tumour/interfaces.py:324
+msgid "Library construction time"
+msgstr "建库时间"
+
+#: gene/tumour/interfaces.py:346
+msgid "Library kit lot number"
+msgstr "文库试剂盒批号"
+
+#: gene/tumour/interfaces.py:351
+msgid "Library location"
+msgstr "文库存放位置"
+
+#: gene/tumour/browser/import.py:194
+#: gene/tumour/browser/templates/search_view.pt:470
+msgid "Line number"
+msgstr "行号"
+
+#: gene/tumour/browser/templates/search_view.pt:187
+msgid "Matches words that like 'apple' 'able'"
+msgstr "匹配单词像 'apple' 'able'"
+
+#: gene/tumour/browser/templates/search_view.pt:185
+msgid "Matches words that like 'book' 'back'"
+msgstr "匹配单词像 'book' 'back'"
+
+#: gene/tumour/browser/templates/search_view.pt:183
+msgid "Matches words that like 'oad' 'odd'"
+msgstr "匹配单词像 'oad' 'odd'"
+
+#: gene/tumour/browser/templates/search_view.pt:189
+msgid "Matches words that like 'seek' 'speed'"
+msgstr "匹配单词像 'seek' 'speed'"
+
+#: gene/tumour/browser/templates/search_view.pt:125
+msgid "Modification time"
+msgstr "修改时间"
+
+#: gene/tumour/browser/templates/search_view.pt:478
+#: gene/tumour/handlers.py:113
+msgid "Modify time"
+msgstr "修改时间"
+
+#: gene/tumour/browser/templates/search_view.pt:421
+msgid "More"
+msgstr "更多"
+
+#: gene/tumour/browser/templates/search_view.pt:418
+msgid "More actions"
+msgstr "更多操作"
+
+#: gene/tumour/browser/templates/search_view.pt:282
+msgid "NA"
+msgstr "核酸"
+
+#: gene/tumour/browser/form.py:432
+#: gene/tumour/browser/templates/import.pt:20
+#: gene/tumour/browser/templates/search_view.pt:50
+msgid "NA Extraction"
+msgstr "核酸提取"
+
+#: gene/tumour/interfaces.py:285
+msgid "NA Extraction Type"
+msgstr "核酸提取类型"
+
+#: gene/tumour/interfaces.py:300
+msgid "NA concentration (NG/UL)"
+msgstr "核酸浓度（ng/ul）"
+
+#: gene/tumour/interfaces.py:317
+msgid "NA extracting operator"
+msgstr "核酸提取操作人"
+
+#: gene/tumour/interfaces.py:312
+msgid "NA extraction kit lot number"
+msgstr "核酸提取试剂盒批号"
+
+#: gene/tumour/interfaces.py:294
+msgid "NA plasma volume(ml)"
+msgstr "核酸血浆体积(ml)"
+
+#: gene/tumour/interfaces.py:288
+msgid "NA type"
+msgstr "核酸类型"
+
+#: gene/tumour/interfaces.py:134
+msgid "Name"
+msgstr "姓名"
+
+#: gene/tumour/vocabulary.py:53
+msgid "Negative"
+msgstr "阴性"
+
+#: gene/tumour/browser/templates/import.pt:88
+msgid "Next"
+msgstr "下一步"
+
+#: gene/tumour/browser/templates/backup.pt:83
+msgid "No content to backup."
+msgstr "没有要备份的内容。"
+
+#: gene/tumour/browser/import.py:137
+msgid "No files were selected."
+msgstr "未选择任何文件。"
+
+#: gene/tumour/browser/templates/search_view.pt:229
+msgid "None"
+msgstr "无"
+
+#: gene/tumour/browser/templates/backup.pt:34
+msgid "Note"
+msgstr "提示"
+
+#: gene/tumour/browser/versioning.py:44
+msgid "Note has been added."
+msgstr "备注已添加。"
+
+#: gene/tumour/browser/versioning.py:47
+msgid "Note has not been added."
+msgstr "备注未添加。"
+
+#: gene/tumour/browser/templates/search_view.pt:175
+msgid "Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored."
+msgstr "注意通配符不能在搜索短语开头。'?ope' 是非法的搜索词，将被忽略。"
+
+#: gene/tumour/interfaces.py:379
+msgid "OT instrument number"
+msgstr "OT仪器编号"
+
+#: gene/tumour/browser/import.py
+msgid "Object is of wrong type."
+msgstr "类型错误"
+
+#: gene/tumour/interfaces.py:176
+msgid "Pathological diagnosis"
+msgstr "原病理诊断"
+
+#: gene/tumour/interfaces.py:181
+msgid "Pathological number"
+msgstr "原病理号"
+
+#: gene/tumour/browser/templates/search_view.pt:66
+msgid "Pending"
+msgstr "待审"
+
+#: gene/tumour/interfaces.py:269
+msgid "Plasma location"
+msgstr "血浆存放位置"
+
+#: gene/tumour/interfaces.py:274
+msgid "Plasma separation note"
+msgstr "血浆分离备注"
+
+#: gene/tumour/interfaces.py:91
+msgid "Please fill out an integer range: 1-365"
+msgstr "请填写一个整数，范围：1-365"
+
+#: gene/tumour/browser/templates/backup.pt:57
+msgid "Please note that data compression will increase this time."
+msgstr "请注意，数据压缩会增加处理时间。"
+
+#: gene/tumour/interfaces.py:1236
+msgid "Please select a new steps."
+msgstr "请选择新步骤"
+
+#: gene/tumour/vocabulary.py:54
+msgid "Positive"
+msgstr "阳性"
+
+#: gene/tumour/interfaces.py:356
+msgid "Post capture concentration (NG/UL)"
+msgstr "捕获后浓度(ng/ul)"
+
+#: gene/tumour/browser/templates/search_view.pt:64
+msgid "Private"
+msgstr "保密"
+
+#: gene/tumour/interfaces.py:428
+msgid "Quality control document"
+msgstr "质控文档"
+
+#: gene/tumour/vocabulary.py:33
+msgid "RNA"
+msgstr "RNA"
+
+#: gene/tumour/vocabulary.py:14
+msgid "Radiotherapy"
+msgstr "放疗"
+
+#: gene/tumour/browser/import.py
+msgid "Raised if the Validation process fails."
+msgstr "验证失败"
+
+#: gene/tumour/interfaces.py:205
+msgid "Received address"
+msgstr "报告接收地址"
+
+#: gene/tumour/interfaces.py:195
+msgid "Received operator"
+msgstr "接收操作人"
+
+#: gene/tumour/interfaces.py:200
+msgid "Received phone"
+msgstr "接收人电话"
+
+#: gene/tumour/browser/templates/search_view.pt:100
+#: gene/tumour/handlers.py:112
+#: gene/tumour/interfaces.py:221
+msgid "Received time"
+msgstr "接收时间"
+
+#: gene/tumour/interfaces.py:90
+msgid "Record Expiration days"
+msgstr "记录过期天数"
+
+#: gene/tumour/interfaces.py:98
+msgid "Record expiration notification user group"
+msgstr "记录过期通知用户组"
+
+#: gene/tumour/browser/templates/search_view.pt:448
+msgid "Recovery data"
+msgstr "恢复数据"
+
+#: gene/tumour/browser/templates/search_view.pt:403
+#: gene/tumour/interfaces.py:1228
+msgid "Redo failed item"
+msgstr "重做失败的条目"
+
+#: gene/tumour/browser/templates/search_view.pt:411
+msgid "Report"
+msgstr "报告"
+
+#: gene/tumour/browser/import.py
+msgid "Required input is missing."
+msgstr "缺少必需的输入"
+
+#: gene/tumour/interfaces.py:417
+msgid "Result"
+msgstr "结果"
+
+#: gene/tumour/interfaces.py:433
+msgid "Result detail"
+msgstr "结果详情"
+
+#: gene/tumour/interfaces.py:423
+msgid "Result information"
+msgstr "结果信息"
+
+#: gene/tumour/browser/templates/search_view.pt:357
+msgid "Results"
+msgstr "结果"
+
+#: gene/tumour/browser/search_view.py:80
+#: gene/tumour/browser/templates/search_view.pt:62
+#: gene/tumour/interfaces.py:1049
+msgid "Review state"
+msgstr "状态"
+
+#: gene/tumour/interfaces.py:70
+msgid "SMS notification"
+msgstr "短信通知"
+
+#: gene/tumour/interfaces.py:76
+msgid "SMS text"
+msgstr "短信内容"
+
+#: gene/tumour/browser/templates/search_view.pt:257
+msgid "Sample"
+msgstr "样本"
+
+#: gene/tumour/interfaces.py:232
+msgid "Sample note"
+msgstr "样本接收备注"
+
+#: gene/tumour/handlers.py:107
+#: gene/tumour/interfaces.py:124
+msgid "Sample number"
+msgstr "样本编号"
+
+#: gene/tumour/browser/templates/search_view.pt:253
+msgid "Sample receiving"
+msgstr "样本接收"
+
+#: gene/tumour/interfaces.py:227
+msgid "Sample size "
+msgstr "样本量"
+
+#: gene/tumour/interfaces.py:237
+msgid "Sample source"
+msgstr "样本来源"
+
+#: gene/tumour/interfaces.py:210
+msgid "Sample type"
+msgstr "样本类型"
+
+#: gene/tumour/browser/templates/search_view.pt:96
+#: gene/tumour/handlers.py:111
+#: gene/tumour/interfaces.py:215
+msgid "Sampling time"
+msgstr "采样时间"
+
+#: gene/tumour/browser/form.py:129
+#: gene/tumour/browser/versioning.py:26
+msgid "Save"
+msgstr "保存"
+
+#: gene/tumour/browser/templates/search_view.pt:469
+msgid "Select"
+msgstr "选择"
+
+#: gene/tumour/browser/templates/import.pt:52
+msgid "Select the Excel file, click here to ${download} import template file."
+msgstr "选择Excel文件，点击${download}导入模板文件。"
+
+#: gene/tumour/browser/restore.py:50
+msgid "Select this option if you want the data compression"
+msgstr "择此选项，如果你想要数据压缩"
+
+#: gene/tumour/interfaces.py:1253
+msgid "Select this option if you want the data compression "
+msgstr "选中此项，进行数据压缩"
+
+#: gene/tumour/browser/templates/search_view.pt:87
+msgid "Select time"
+msgstr "选择时间"
+
+#: gene/tumour/interfaces.py:264
+msgid "Separation operator"
+msgstr "分离操作人"
+
+#: gene/tumour/browser/templates/search_view.pt:104
+#: gene/tumour/interfaces.py:258
+msgid "Separation time"
+msgstr "分离时间"
+
+#: gene/tumour/interfaces.py:400
+msgid "Sequencer number"
+msgstr "测序仪编号"
+
+#: gene/tumour/interfaces.py:405
+msgid "Sequencing IP"
+msgstr "服务器IP"
+
+#: gene/tumour/browser/templates/search_view.pt:40
+#: gene/tumour/interfaces.py:410
+msgid "Sequencing filename"
+msgstr "测序文件名"
+
+#: gene/tumour/interfaces.py:395
+msgid "Sequencing operator"
+msgstr "测序操作人"
+
+#: gene/tumour/browser/templates/search_view.pt:119
+#: gene/tumour/interfaces.py:389
+msgid "Sequencing time"
+msgstr "测序时间"
+
+#: gene/tumour/interfaces.py:139
+msgid "Sex"
+msgstr "性别"
+
+#: gene/tumour/handlers.py:110
+msgid "State"
+msgstr ""
+
+#: gene/tumour/browser/templates/search_view.pt:401
+#: gene/tumour/interfaces.py:1169
+msgid "State transition"
+msgstr "状态转换"
+
+#: gene/tumour/browser/templates/import.pt:36
+msgid "Step"
+msgstr "步骤"
+
+#: gene/tumour/browser/templates/search_view.pt:45
+#: gene/tumour/handlers.py:109
+#: gene/tumour/interfaces.py:440
+msgid "Steps"
+msgstr "步骤"
+
+#: gene/tumour/browser/import.py:421
+msgid "StepsError: steps expected ${expected}, got ${got}; "
+msgstr "步骤错误: 预期 ${expected}, 得到 ${got}; "
+
+#: gene/tumour/interfaces.py:166
+msgid "Submission department"
+msgstr "送检科室"
+
+#: gene/tumour/interfaces.py:171
+msgid "Submission doctor"
+msgstr "送检医生"
+
+#: gene/tumour/interfaces.py:161
+msgid "Submission hospital"
+msgstr "送检医院"
+
+#: gene/common/profiles/default/workflows/genetic_testing_workflow/definition.xml
+msgid "Submit for review"
+msgstr "提交审核"
+
+#: gene/tumour/browser/templates/search_view.pt:68
+msgid "Success"
+msgstr "成功"
+
+#: gene/tumour/browser/import.py:193
+msgid "Success or failure"
+msgstr "成败"
+
+#: gene/tumour/vocabulary.py:12
+msgid "Surgery"
+msgstr "手术"
+
+#: gene/tumour/interfaces.py:242
+msgid "TCC/TCP"
+msgstr "TCC/TCP"
+
+#: gene/tumour/vocabulary.py:15
+msgid "Targeted drug therapy"
+msgstr "靶向药物治疗"
+
+#: gene/tumour/browser/templates/search_view.pt:38
+#: gene/tumour/interfaces.py:253
+msgid "Task no"
+msgstr "任务单号"
+
+#: gene/tumour/interfaces.py:374
+msgid "Template kit lot number"
+msgstr "模板制备试剂盒批号"
+
+#: gene/tumour/interfaces.py:369
+msgid "Template preparation operator"
+msgstr "模板制备操作人"
+
+#: gene/tumour/browser/templates/search_view.pt:116
+#: gene/tumour/interfaces.py:363
+msgid "Template preparation time"
+msgstr "制备时间"
+
+#: gene/tumour/browser/import.py:594
+#: gene/tumour/interfaces.py:58
+msgid "The URL you have provided could not be reached."
+msgstr "提供的URL无法抵达."
+
+#: gene/tumour/interfaces.py:50
+msgid "The URL you have provided could not be reached. Please verify the URL is correct and that the network location is reachable."
+msgstr "您提供的网址无法到达。请验证网址是正确的，网络位置是可到达的。"
+
+#: gene/tumour/interfaces.py:36
+msgid "The value is not of the correct format"
+msgstr "数值格式不正确"
+
+#: gene/tumour/interfaces.py:28
+msgid "This time cannot be greater than current time"
+msgstr "此时间不能大于当前时间"
+
+#: gene/tumour/browser/templates/search_view.pt:168
+msgid "This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'."
+msgstr "返回包含 'word1' 和 'word2' 的对象，或只包含 'word3' 的对象。"
+
+#. Default: "This will search for all objects that contain both 'word1' and 'word2'."
+#: gene/tumour/browser/templates/search_view.pt:157
+msgid "This will search for all objects that contain both 'word1' and 'word2'. "
+msgstr "将搜索包含 'word1' 和 'word2' 的所有对象。"
+
+#: gene/tumour/interfaces.py:189
+msgid "Treatment"
+msgstr "治疗"
+
+#: gene/tumour/interfaces.py:186
+msgid "Treatment situation"
+msgstr "治疗情况"
+
+#: gene/tumour/profiles/default/types/Tumour.xml
+msgid "Tumour"
+msgstr ""
+
+#: gene/tumour/controlpanel.py:14
+#: gene/tumour/profiles/default/controlpanel.xml
+msgid "Tumour Control Panel"
+msgstr ""
+
+#: gene/tumour/interfaces.py:608
+msgid "UUID"
+msgstr "UUID"
+
+#: gene/tumour/configure.zcml:46
+msgid "Uninstalls the gene.tumour add-on."
+msgstr ""
+
+#: gene/tumour/interfaces.py:109
+msgid "User group"
+msgstr "用户组"
+
+#: gene/tumour/interfaces.py:105
+msgid "User search filter"
+msgstr "用户搜索筛选"
+
+#: gene/tumour/interfaces.py:106
+msgid "User search filter additional conditions"
+msgstr "用户搜索筛选附加条件"
+
+#: gene/tumour/interfaces.py:114
+msgid "Users search additional filtering criteria. Reference usage: Advanced search instructions"
+msgstr "用户搜索附加过滤条件。用法参考: 高级搜索用法"
+
+#: gene/tumour/browser/import.py
+msgid "ValidationError"
+msgstr "验证错误"
+
+#: gene/tumour/browser/import.py
+msgid "Value is too big"
+msgstr "数值太大"
+
+#: gene/tumour/browser/import.py:325
+msgid "ValuesError: ${sample_title} ${sample_value} already exist; "
+msgstr "数值错误: ${sample_title} ${sample_value} 已经存在; "
+
+#: gene/tumour/browser/import.py:299
+msgid "ValuesError: ${sample_title} ${sample_value} are not unique; "
+msgstr "数值错误: ${sample_title} ${sample_value} 不唯一; "
+
+#: gene/tumour/browser/import.py:402
+msgid "ValuesError: ${sample_title} ${sample_value} does't exist; "
+msgstr "数值错误: ${sample_title} ${sample_value} 不存在; "
+
+#: gene/tumour/handlers.py:101
+msgid "Warn"
+msgstr ""
+
+#: gene/tumour/browser/templates/backup.pt:82
+msgid "Warning"
+msgstr "警告"
+
+#: gene/tumour/interfaces.py:99
+msgid "When the entry has expired, send an email message to inform the user"
+msgstr "当记录过期，发送Email消息通知用户"
+
+#: gene/tumour/browser/form.py:697
+#: gene/tumour/interfaces.py:1244
+msgid "Workflow state transition"
+msgstr "工作流状态转换"
+
+#: gene/tumour/browser/import.py
+msgid "Wrong contained type"
+msgstr "包含的类型错误"
+
+#: gene/tumour/browser/templates/backup.pt:64
+msgid "You can choose to data compression or not."
+msgstr "选择是否数据压缩。"
+
+#: gene/tumour/browser/templates/backup.pt:39
+msgid "You currently have ${number_of_objects} tumour objects to be backup."
+msgstr "目前有 ${number_of_objects} 个 Tumour 需要备份。"
+
+#: gene/tumour/interfaces.py:77
+msgid "You need to send the text."
+msgstr "您需要发送的信息"
+
+#: gene/tumour/handlers.py:103
+msgid "[${warn}] [Tumour] ${count} items Expiration Notification"
+msgstr ""
+
+#: gene/tumour/browser/templates/search_view.pt:389
+msgid "actions"
+msgstr "操作"
+
+#: gene/tumour/vocabulary.py:31
+msgid "cfDNA"
+msgstr "cfDNA"
+
+#: gene/tumour/vocabulary.py:35
+msgid "cfDNA\RNA"
+msgstr "cfDNA\RNA"
+
+#. Default: "<strong>N</strong> Items will be permanently deleted! Deleted cannot be recovered."
+#: gene/tumour/browser/templates/search_view.pt:514
+msgid "delete-warning"
+msgstr "<strong>N</strong> 条数据将被永久删除！删除无法恢复。"
+
+#. Default: "View"
+#: gene/tumour/profiles/default/types/Tumour.xml
+msgid "description"
+msgstr ""
+
+#. Default: "<strong class=\"_total\">N</strong> items selected, <strong class=\"_same\">N</strong> same library barcode: <br /><span class=\"_bar\"></span>"
+#: gene/tumour/browser/templates/search_view.pt:544
+msgid "dilution-confirm"
+msgstr "<strong class=\"_total\">N</strong> 条数据, <strong class=\"_same\">N</strong> 个重复的文库条码: <br /><span class=\"_bar\"></span>"
+
+#: gene/tumour/browser/templates/import.pt:53
+msgid "download"
+msgstr "下载"
+
+#: gene/tumour/browser/templates/search_view.pt:139
+msgid "end time"
+msgstr "结束时间"
+
+#: gene/tumour/vocabulary.py:32
+msgid "gDNA"
+msgstr "gDNA"
+
+#: gene/tumour/vocabulary.py:34
+msgid "gDNA\RNA"
+msgstr "gDNA\RNA"
+
+#: gene/tumour/browser/configure.zcml:47
+msgid "gene tumour search data"
+msgstr "Tumour查询数据"
+
+#: gene/tumour/browser/configure.zcml:36
+msgid "gene tumour search view"
+msgstr "gene tumour search view"
+
+#: gene/tumour/configure.zcml:36
+msgid "gene.tumour"
+msgstr ""
+
+#: gene/tumour/configure.zcml:46
+msgid "gene.tumour (uninstall)"
+msgstr ""
+
+#. Default: "Enter a comment that describes the changes you made."
+#: gene/tumour/interfaces.py:1063
+msgid "help_change_note"
+msgstr ""
+
+#. Default: "Backup"
+#: gene/tumour/browser/backup.py:61
+#: gene/tumour/browser/restore.py:62
+msgid "label_backup"
+msgstr "备份"
+
+#. Default: "Cancel"
+#: gene/tumour/browser/backup.py:117
+#: gene/tumour/browser/restore.py:94
+#: gene/tumour/browser/templates/import.pt:78
+msgid "label_cancel"
+msgstr "取消"
+
+#. Default: "Change Note"
+#: gene/tumour/interfaces.py:1062
+msgid "label_change_note"
+msgstr "更改注释"
+
+#. Default: "Import"
+#: gene/tumour/browser/templates/import.pt:83
+msgid "label_import"
+msgstr "导入"
+
+#: gene/tumour/vocabulary.py:108
+msgid "name"
+msgstr "name"
+
+#: gene/tumour/browser/form.py:153
+msgid "operation cancelled"
+msgstr "取消操作"
+
+#: gene/tumour/browser/search_view.py:217
+msgid "result"
+msgstr ""
+
+#: gene/tumour/browser/templates/search_view.pt:132
+msgid "start time"
+msgstr "开始时间"
+
+#: gene/tumour/vocabulary.py:118
+msgid "step1"
+msgstr "样本"
+
+#: gene/tumour/vocabulary.py:119
+msgid "step2"
+msgstr "核酸"
+
+#: gene/tumour/vocabulary.py:120
+msgid "step3"
+msgstr "文库"
+
+#: gene/tumour/vocabulary.py:121
+msgid "step4"
+msgstr "检测"
+
+#: gene/tumour/vocabulary.py:122
+msgid "step5"
+msgstr "完成"
+
+#: gene/tumour/browser/import.py:417
+msgid "steps"
+msgstr "步骤"
+
+#. Default: "duration:${time_to_duration}"
+#: gene/tumour/browser/templates/import.pt:119
+msgid "time-report"
+msgstr "执行时长：${time_to_duration}"
+
+#: gene/tumour/browser/templates/search_view.pt:179
+msgid "which returns all words that begin with 'Z'"
+msgstr "返回所有以 'Z' 开头的单词"
+
+#: gene/tumour/browser/templates/search_view.pt:181
+msgid "which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell."
+msgstr "返回所有以 'Zop' 开头且后有一个字符的单词 — — 就像在 Un*x shell中。"
+
+#: gene/tumour/browser/templates/search_view.pt:159
+msgid "which would search for occurrences of 'word1' but would exclude documents which contain 'word2'."
+msgstr "这将搜索包含 word1 但不包含 'word2' 的文档。"
+
+#: gene/tumour/browser/templates/search_view.pt:206
+msgid "will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself."
+msgstr "将返回包含 'bob' 和 'uncle'，但不包含以 'Zop' 开头的像 Zoologist', 'Zoology', 或 'Zoo' 的所有对象。"
+
+#: gene/tumour/browser/templates/search_view.pt:210
+msgid "will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'."
+msgstr "将返回包含 'snakes' 或 'frogs' 但不包含短语 'carpet python' 的所有对象。"
+
+#: gene/tumour/browser/templates/search_view.pt:199
+msgid "will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'"
+msgstr "将搜索包含短语 'carpet python' 或 单词'frogs' 的所有对象"
