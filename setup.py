@@ -42,7 +42,7 @@ setup(
         'collective.z3cform.datagridfield',
         'collective.schedule',
         'gene.common',
-        'genetheme.green',
+        'gene.theme',
     ],
     extras_require={
         'test': [
