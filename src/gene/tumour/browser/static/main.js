@@ -1,6 +1,22 @@
-
-jQuery(function ($) {
-
+require([
+  'jquery',
+  'datatables.net',
+  'datatables.net-bs',
+  'datatables.net-buttons',
+  "datatables.net-buttons-colvis",
+  "datatables.net-buttons-flash",
+  "datatables.net-buttons-html5",
+  "datatables.net-buttons-print",
+  'datatables.net-buttons-bs',
+  'datatables.net-colreorder',
+  'datatables.net-rowreorder',
+  'datatables.net-fixedcolumns',
+  'datatables.net-fixedheader',
+  'datatables.net-select',
+ // 'bootstrap-popover',
+  'jquery.auto-grow-input'
+], function($) {
+$(document).ready(function(){
     var $datable_object = $('#tumour_datatable');
 
     if ($datable_object.length) {
@@ -21,9 +37,7 @@ jQuery(function ($) {
             35 /* id=data_table_paginate - */
             /* 25 id=data_table_length - */
              /* 21.row margin & padding */;
-        var root_url = $('link[rel="home"]').prop('href') || window.navigation_root_url || window.portal_url;
-        var root_url_len = root_url.split('/').length;
-        var current_url = location.href.split('/').slice(0, root_url_len + 1).join('/');
+        var current_url = $('#ajax-target').attr('data-ajax-url');
         var data_url = current_url + '/@@genetumour-search-data';
         var _authenticator = $form_searchbox.find('input[name="_authenticator"]').val();
         // var columns_visible = $("body.userrole-manager, body.userrole-reviewer").length;
@@ -210,11 +224,11 @@ jQuery(function ($) {
                     "render": function (data, type, full, meta) {
                         var action = [];
                         if (data['can_changenote']) {
-                            action.push('<a class="_ChangeNote" href="' +
+                            action.push('<a class="_ChangeNote pat-plone-modal" href="' +
                                 data['url'] + '/@@genetumour-changenote">备注</a>');
                         }
                         if (data['can_versions']) {
-                            action.push('<a class="_ContentHistory" href="' +
+                            action.push('<a class="_ContentHistory pat-plone-modal" href="' +
                                 data['url'] + '/@@historyview">历史</a>');
                         }
                         return action.join(' ');
@@ -765,7 +779,7 @@ jQuery(function ($) {
                     $data_table.search(this.value).draw();
                 }
             });
-
+/* cancel popover by adam
         $("#form-SearchableHelp")
             .popover({
                 html: true,
@@ -777,6 +791,7 @@ jQuery(function ($) {
                 placement: 'auto rigth'
                 //viewport: '#form-SearchableText'
             });
+            */
         /*.on('shown.bs.popover', function () {
          $('#' + this.getAttribute('aria-describedby'))
          .insertAfter($(this)
@@ -885,31 +900,6 @@ jQuery(function ($) {
                 $formDateFrom.datepicker("option", "maxDate", selectedDate);
             }
         });
-
-
-        $datable_object
-            .on('draw.dt', function () {
-                $('a._ChangeNote').prepOverlay({
-                    subtype: 'ajax',
-                    cssclass: 'overlay-changenote',
-                    width:'30%',
-                    filter: 'h2, #content',
-                    formselector: 'form[id="ChangeNoteForm"]',
-                    noform: function(el) {return $.plonepopups.noformerrorshow(el, 'close');}
-                });
-            });
-
-
-        $datable_object
-            .on('draw.dt', function () {
-                $('a._ContentHistory').prepOverlay({
-                    subtype: 'ajax',
-                    cssclass: 'overlay-history',
-                    filter: 'h2, #content-history',
-                    urlmatch: '@@historyview',
-                    urlreplace: '@@contenthistorypopup'
-                });
-            });
 
 
         $datable_object
@@ -1189,13 +1179,13 @@ jQuery(function ($) {
           .children('span.formHelp')
           .contents()
           .after(' ');
-
+/*
         $('a#sms-help-info').prepOverlay({
               subtype: 'ajax',
               cssclass: 'overlay-sms-help',
               filter: '#content-core'
           });
-
+*/
 
         $('select[id^=form-widgets-user_search_filter-key-]')
             .on('change', function () {
@@ -1344,5 +1334,6 @@ jQuery(function ($) {
         return val;
     }
 
-    $('[data-submenu]').submenupicker();
+//$('[data-submenu]').submenupicker();
+});
 });

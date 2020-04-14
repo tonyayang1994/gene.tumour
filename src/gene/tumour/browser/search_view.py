@@ -16,11 +16,18 @@ from plone.batching import Batch
 from plone.memoize import view
 from zope.i18n import translate
 from zope.publisher.browser import BrowserView
+from Products.CMFPlone.resources import add_bundle_on_request
 
 logger = logging.getLogger(__name__)
 
 
 class SearchView(BrowserView):
+    
+    def __init__(self, context, request):
+
+        self.context = context
+        self.request = request
+        add_bundle_on_request(self.request, 'gene-tumour-main')
 
     def __call__(self, *args, **kw):
         self.request['disable_border'] = True
