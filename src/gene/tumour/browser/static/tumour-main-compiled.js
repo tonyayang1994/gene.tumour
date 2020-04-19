@@ -16428,7 +16428,9 @@ $(document).ready(function(){
                 var data = {uuids: uuid_list, bulk_action: target_data,
                   _authenticator: _authenticator/*, ajax_load: false*/};
                 $.extend(data, extraParameters);
-                submitForm(view, data);
+                var current_url = $('#ajax-target').attr('data-ajax-url');
+                var post_url = current_url + '/@@'  +  view;
+                submitForm(post_url, data);
 
                 /*$.post(".", data, dataType = "html")
                  .done(function (data) {

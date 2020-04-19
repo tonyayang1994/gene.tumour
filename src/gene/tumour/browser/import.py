@@ -40,6 +40,7 @@ from zope.component import getUtility
 from zope.event import notify
 from zope.i18n import translate
 from zope.lifecycleevent import modified
+from Products.CMFPlone.resources import add_bundle_on_request
 
 logger = logging.getLogger(__name__)
 
@@ -57,6 +58,9 @@ class ImportExcel(BrowserView):
 
     def __init__(self, context, request):
         super(ImportExcel, self).__init__(context, request)
+        self.context = context
+        self.request = request
+        add_bundle_on_request(self.request, 'gene-tumour-main')
         self.request['disable_border'] = True
         for trans, invert in [(invert_situation_local, invert_situation_dict),
                               (invert_na_types_local, invert_na_types_dict),

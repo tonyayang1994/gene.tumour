@@ -3,6 +3,12 @@
       lang="en"
         metal:use-macro="context/main_template/macros/master"
         i18n:domain="gene.tumour">
+<metal:block fill-slot="top_slot"
+         tal:define="dummy string:python:request.set('disable_border', 1);
+        disable_column_two python:request.set('disable_plone.rightcolumn', 1);
+        disable_column_one python:request.set('disable_plone.leftcolumn', 1);">
+</metal:block>
+
 <body>
 
 <metal:content-main fill-slot="body">
