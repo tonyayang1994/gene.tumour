@@ -2,19 +2,14 @@ require([
   'jquery',
   'datatables.net',
   'datatables.net-bs',
-  'datatables.net-buttons',
-  "datatables.net-buttons-colvis",
-  "datatables.net-buttons-flash",
-  "datatables.net-buttons-html5",
-  "datatables.net-buttons-print",
-  'datatables.net-buttons-bs',
   'datatables.net-colreorder',
   'datatables.net-rowreorder',
   'datatables.net-fixedcolumns',
   'datatables.net-fixedheader',
   'datatables.net-select',
- // 'bootstrap-popover',
-  'jquery.auto-grow-input'
+  'bootstrap-modal-js',
+  'jquery.auto-grow-input',
+  'jquery.popupforms'
 ], function($) {
 $(document).ready(function(){
     var $datable_object = $('#tumour_datatable');
@@ -663,7 +658,7 @@ $(document).ready(function(){
                             modal.find('.modal-body strong').text(uuid_length);
                             return 2;
                         }
-                        view = '.';
+                        view = 'genetumour-search-view';
                         break;
 
                     case 'export-item':
