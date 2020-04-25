@@ -30,6 +30,10 @@ def fields_title():
     return [translate(_(field[1].title), context=request)
             for field in fields()]
 
+def export_fields_title():
+    tmp = fields_title()
+    tmp.append(u"状态")
+    return tmp
 
 review_states = [u'private', u'pending', u'success', u'failed', u'abort']
 progress_steps = [u'step1', u'step2', u'step3', u'step4', u'step5']

@@ -71,12 +71,13 @@ class ExportExcel(BrowserView):
         workbook = xlwt.Workbook()
         sheet = workbook.add_sheet(u'Sheet1')
 
-        for index, value in enumerate(utils.fields_title()):
+        for index, value in enumerate(utils.export_fields_title()):
             sheet.write(0, index, value)
 
         fields_review = []
         for row, obj in enumerate(items):
             real_object = obj.getObject()
+            i = 0
             for col, name in enumerate(utils.fields_name()):
                 if not can_review and name in fields_review:
                     value = ''
@@ -89,7 +90,9 @@ class ExportExcel(BrowserView):
                         except ValueError:
                             pass
                 sheet.write(row + 1, col, value)
-
+                i += 1
+            sheet.write(row + 1, i, api.portal.translate(obj.review_state,lang='zh_CN'))
+            
         file_obj = StringIO()
         workbook.save(file_obj)
         return file_obj
