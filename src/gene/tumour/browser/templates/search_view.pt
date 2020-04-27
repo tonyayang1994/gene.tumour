@@ -84,9 +84,25 @@
                         <span tal:replace="structure context/@@authenticator/authenticator" />
                     </div>
                     <!-- /input-group -->
-                </div>
-
-                <div class="col-md-3 form-date-range">
+                </div> 
+                <div class="col-md-7 text-right" id="datatable_info"></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-date-range">
+                    
+                    <label for="form-date-from" class="hide">From</label>
+                    <span class="date-from">
+                    
+                    <input class="pat-pickadate" data-pat-pickadate="time:false" type="text" id="form-date-from" name="from"
+                                                   placeholder="start date" i18n:attributes="placeholder">
+                   </span>
+                    -
+                    <label for="form-date-to" class="hide">to</label>
+                    <span class="date-to"> 
+                    <input class="pat-pickadate" data-pat-pickadate="time:false" type="text" id="form-date-to" name="to"
+                                                  placeholder="end date" i18n:attributes="placeholder">
+                    </span>
                     <div class="dropdown" id="form-SearchDate">
                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                             <span id="form-SearchDateTitle" i18n:translate="">Select time</span>
@@ -132,22 +148,7 @@
                             </li>
                         </ul>
                     </div>
-
-                    <label for="form-date-from" class="hide">From</label>
-                    <span class="date-from"><input type="text" id="form-date-from" name="from"
-                                                   placeholder="start time" i18n:attributes="placeholder">
-                    <span id="form-date-from-clear" data-for="form-date-from"
-                          class="glyphicon glyphicon-remove form-control-feedback del_searchword"
-                          aria-hidden="true"></span></span>
-                    -
-                    <label for="form-date-to" class="hide">to</label>
-                    <span class="date-to"> <input type="text" id="form-date-to" name="to"
-                                                  placeholder="end time" i18n:attributes="placeholder">
-                    <span id="form-date-to-clear" data-for="form-date-to"
-                          class="glyphicon glyphicon-remove form-control-feedback del_searchword"
-                          aria-hidden="true"></span></span>
                 </div>
-                <div class="col-md-4 text-right" id="datatable_info"></div>
             </div>
 
             <div id="tooltip-SearchableText" class="hide">
