@@ -1,8 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-04-21 11:33+0000\n"
-"PO-Revision-Date: 2020-04-21 19:34+0800\n"
+"POT-Creation-Date: 2020-05-08 07:31+0000\n"
+"PO-Revision-Date: 2020-05-08 15:33+0800\n"
+"Last-Translator: Adam <yuejun.tang@gmail.com>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,8 +13,6 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
-"Last-Translator: Adam <yuejun.tang@gmail.com>\n"
-"Language-Team: \n"
 "Language: zh_CN\n"
 "X-Generator: Poedit 1.8.8\n"
 
@@ -44,35 +44,35 @@ msgstr "${failed_percent}% 失败 (${failed_rate})"
 msgid "${success_percent} Success (${success_rate})"
 msgstr "${success_percent} 成功 (${success_rate})"
 
-#: ../browser/templates/search_view.pt:180
+#: ../browser/templates/search_view.pt:181
 msgid "* zero or more character, ? one character"
 msgstr "* 零个或多个字符, ? 一个字符"
 
-#: ../browser/templates/search_view.pt:156
+#: ../browser/templates/search_view.pt:157
 msgid "1. Boolean expressions"
 msgstr "1.布尔表达式"
 
-#: ../browser/templates/search_view.pt:169
+#: ../browser/templates/search_view.pt:170
 msgid "2. Parentheses"
 msgstr "2.括号"
 
-#: ../browser/templates/search_view.pt:179
+#: ../browser/templates/search_view.pt:180
 msgid "3. Wild cards"
 msgstr "3.通配符"
 
-#: ../browser/templates/search_view.pt:199
+#: ../browser/templates/search_view.pt:200
 msgid "4. Phrase search"
 msgstr "4.短语搜索"
 
-#: ../browser/templates/search_view.pt:210
+#: ../browser/templates/search_view.pt:211
 msgid "5. Mixed together"
 msgstr "5.组合在一起"
 
-#: ../browser/templates/search_view.pt:157
+#: ../browser/templates/search_view.pt:158
 msgid "A sequence of words without operators implies AND. A search for 'carpet python snakes' translates to 'carpet AND python AND snakes'."
 msgstr "无操作符的单词序列表示 AND 操作。如搜索 'carpet python snakes' 将转化为 'carpet AND python AND snakes'。"
 
-#: ../browser/templates/search_view.pt:157
+#: ../browser/templates/search_view.pt:158
 msgid "AND, OR, NOT(synonym a -)"
 msgstr "AND, OR, NOT(同义符号'-')"
 
@@ -84,19 +84,19 @@ msgstr "中止"
 msgid "Absorbance 260/280"
 msgstr "吸光度260/280"
 
-#: ../browser/templates/search_view.pt:464
+#: ../browser/templates/search_view.pt:465
 msgid "Action"
 msgstr "操作"
 
-#: ../browser/templates/search_view.pt:397
+#: ../browser/templates/search_view.pt:398
 msgid "Actions"
 msgstr "操作"
 
-#: ../browser/templates/search_view.pt:297
+#: ../browser/templates/search_view.pt:298
 msgid "Add NA data"
 msgstr "添加核酸数据"
 
-#: ../browser/templates/search_view.pt:372
+#: ../browser/templates/search_view.pt:373
 msgid "Add Results data"
 msgstr "添加结果数据"
 
@@ -108,15 +108,15 @@ msgstr "添加备注"
 msgid "Add change notes, note the notes cannot be changed."
 msgstr "添加备注，注意备注无法更改。"
 
-#: ../browser/templates/search_view.pt:347
+#: ../browser/templates/search_view.pt:348
 msgid "Add detecting data"
 msgstr "添加检测数据"
 
-#: ../browser/templates/search_view.pt:322
+#: ../browser/templates/search_view.pt:323
 msgid "Add library data"
 msgstr "添加文库数据"
 
-#: ../browser/templates/search_view.pt:272
+#: ../browser/templates/search_view.pt:273
 msgid "Add sample data"
 msgstr "添加样本数据"
 
@@ -132,7 +132,7 @@ msgstr "后一步骤时间必须大于等于前一步骤时间"
 msgid "Age"
 msgstr "年龄"
 
-#: ../browser/templates/search_view.pt:497
+#: ../browser/templates/search_view.pt:498
 msgid "Alert: delete data!"
 msgstr "警告︰删除数据！"
 
@@ -162,13 +162,13 @@ msgstr "条码"
 msgid "Blood Sample"
 msgstr "样本接收"
 
-#: ../browser/form.py:121 ../browser/templates/search_view.pt:507
+#: ../browser/form.py:121 ../browser/templates/search_view.pt:508
 #: ../browser/versioning.py:48
 msgid "Cancel"
 msgstr "取消"
 
-#: ../browser/form.py:495 ../browser/templates/search_view.pt:402
-#: ../interfaces.py:1204
+#: ../browser/form.py:495 ../browser/templates/search_view.pt:403
+#: ../interfaces.py:1219
 msgid "Change Steps"
 msgstr "更改步骤"
 
@@ -181,7 +181,7 @@ msgstr "化疗"
 msgid "Computer Detecting"
 msgstr "上机检测"
 
-#: ../browser/templates/search_view.pt:504
+#: ../browser/templates/search_view.pt:505
 msgid "Confirm"
 msgstr "确认"
 
@@ -189,27 +189,27 @@ msgstr "确认"
 msgid "Constraint not satisfied"
 msgstr "约束不满足"
 
-#: ../browser/templates/search_view.pt:170
+#: ../browser/templates/search_view.pt:171
 msgid "Control search order with parenthetical expressions"
 msgstr "用括号表达式控制搜索顺序"
 
-#: ../browser/templates/search_view.pt:127
+#: ../browser/templates/search_view.pt:143
 msgid "Creation time"
 msgstr "创建时间"
 
-#: ../interfaces.py:1220
+#: ../interfaces.py:1235
 msgid "Data compression"
 msgstr "数据压缩"
 
-#: ../browser/templates/search_view.pt:425
+#: ../browser/templates/search_view.pt:426
 msgid "Delete Records"
 msgstr "删除记录"
 
-#: ../browser/templates/search_view.pt:337
+#: ../browser/templates/search_view.pt:338
 msgid "Detecting"
 msgstr "检测"
 
-#: ../browser/templates/search_view.pt:200
+#: ../browser/templates/search_view.pt:201
 msgid "Double-quoted text implies phrase search"
 msgstr "双引号括起来的文本表示短语搜索"
 
@@ -221,23 +221,23 @@ msgstr "模拟执行模式"
 msgid "ES instrument number"
 msgstr "ES仪器编号"
 
-#: ../browser/templates/search_view.pt:302
+#: ../browser/templates/search_view.pt:303
 msgid "Edit NA data"
 msgstr "编辑核酸数据"
 
-#: ../browser/templates/search_view.pt:377
+#: ../browser/templates/search_view.pt:378
 msgid "Edit Results data"
 msgstr "编辑结果数据"
 
-#: ../browser/templates/search_view.pt:352
+#: ../browser/templates/search_view.pt:353
 msgid "Edit detecting data"
 msgstr "编辑检测数据"
 
-#: ../browser/templates/search_view.pt:327
+#: ../browser/templates/search_view.pt:328
 msgid "Edit library data"
 msgstr "编辑文库数据"
 
-#: ../browser/templates/search_view.pt:277
+#: ../browser/templates/search_view.pt:278
 msgid "Edit sample data"
 msgstr "编辑样本数据"
 
@@ -269,15 +269,15 @@ msgstr "实验失败"
 msgid "Experiment success"
 msgstr "实验成功"
 
-#: ../browser/templates/search_view.pt:438
+#: ../browser/templates/search_view.pt:439
 msgid "Export OT Dilution"
 msgstr "导出OT稀释表"
 
-#: ../browser/templates/search_view.pt:432
+#: ../browser/templates/search_view.pt:433
 msgid "Export Records"
 msgstr "导出记录"
 
-#: ../browser/templates/search_view.pt:113 ../interfaces.py:269
+#: ../browser/templates/search_view.pt:129 ../interfaces.py:269
 #: ../models/Tumour.xml
 msgid "Extraction time"
 msgstr "提取时间"
@@ -286,8 +286,8 @@ msgstr "提取时间"
 msgid "Failed"
 msgstr "失败"
 
-#: ../browser/form.py:407 ../browser/templates/search_view.pt:411
-#: ../interfaces.py:1196
+#: ../browser/form.py:407 ../browser/templates/search_view.pt:412
+#: ../interfaces.py:1211
 msgid "Failed Redo"
 msgstr "失败重做"
 
@@ -339,23 +339,23 @@ msgstr "导入"
 msgid "Import Excel file"
 msgstr "导入Excel文件"
 
-#: ../browser/templates/search_view.pt:292
+#: ../browser/templates/search_view.pt:293
 msgid "Import NA data"
 msgstr "导入核酸数据"
 
-#: ../browser/templates/search_view.pt:367
+#: ../browser/templates/search_view.pt:368
 msgid "Import Results data"
 msgstr "导入结果数据"
 
-#: ../browser/templates/search_view.pt:342
+#: ../browser/templates/search_view.pt:343
 msgid "Import detecting data"
 msgstr "导入检测数据"
 
-#: ../browser/templates/search_view.pt:317
+#: ../browser/templates/search_view.pt:318
 msgid "Import library data"
 msgstr "导入文库数据"
 
-#: ../browser/templates/search_view.pt:267
+#: ../browser/templates/search_view.pt:268
 msgid "Import sample data"
 msgstr "导入样本数据"
 
@@ -379,7 +379,7 @@ msgstr "安装gene.tumour包"
 msgid "Invalid import steps."
 msgstr "错误的导入步骤。"
 
-#: ../browser/templates/search_view.pt:312
+#: ../browser/templates/search_view.pt:313
 msgid "Library"
 msgstr "文库"
 
@@ -400,7 +400,7 @@ msgstr "文库浓度（ng/ul)"
 msgid "Library construction operator"
 msgstr "文库构建操作人"
 
-#: ../browser/templates/search_view.pt:117 ../interfaces.py:313
+#: ../browser/templates/search_view.pt:133 ../interfaces.py:313
 #: ../models/Tumour.xml
 msgid "Library construction time"
 msgstr "建库时间"
@@ -413,43 +413,43 @@ msgstr "文库试剂盒批号"
 msgid "Library location"
 msgstr "文库存放位置"
 
-#: ../browser/import.py:186 ../browser/templates/search_view.pt:455
+#: ../browser/import.py:186 ../browser/templates/search_view.pt:456
 msgid "Line number"
 msgstr "行号"
 
-#: ../browser/templates/search_view.pt:192
+#: ../browser/templates/search_view.pt:193
 msgid "Matches words that like 'apple' 'able'"
 msgstr "匹配单词像 'apple' 'able'"
 
-#: ../browser/templates/search_view.pt:190
+#: ../browser/templates/search_view.pt:191
 msgid "Matches words that like 'book' 'back'"
 msgstr "匹配单词像 'book' 'back'"
 
-#: ../browser/templates/search_view.pt:188
+#: ../browser/templates/search_view.pt:189
 msgid "Matches words that like 'oad' 'odd'"
 msgstr "匹配单词像 'oad' 'odd'"
 
-#: ../browser/templates/search_view.pt:194
+#: ../browser/templates/search_view.pt:195
 msgid "Matches words that like 'seek' 'speed'"
 msgstr "匹配单词像 'seek' 'speed'"
 
-#: ../browser/templates/search_view.pt:130
+#: ../browser/templates/search_view.pt:146
 msgid "Modification time"
 msgstr "修改时间"
 
-#: ../browser/templates/search_view.pt:463 ../handlers.py:105
+#: ../browser/templates/search_view.pt:464 ../handlers.py:105
 msgid "Modify time"
 msgstr "修改时间"
 
-#: ../browser/templates/search_view.pt:421
+#: ../browser/templates/search_view.pt:422
 msgid "More"
 msgstr "更多"
 
-#: ../browser/templates/search_view.pt:418
+#: ../browser/templates/search_view.pt:419
 msgid "More actions"
 msgstr "更多操作"
 
-#: ../browser/templates/search_view.pt:287
+#: ../browser/templates/search_view.pt:288
 msgid "NA"
 msgstr "核酸"
 
@@ -498,7 +498,7 @@ msgstr "下一步"
 msgid "No files were selected."
 msgstr "未选择任何文件。"
 
-#: ../browser/templates/search_view.pt:234
+#: ../browser/templates/search_view.pt:235
 msgid "None"
 msgstr "无"
 
@@ -510,7 +510,7 @@ msgstr "备注已添加。"
 msgid "Note has not been added."
 msgstr "备注未添加。"
 
-#: ../browser/templates/search_view.pt:180
+#: ../browser/templates/search_view.pt:181
 msgid "Note though that wild cards cannot be at the beginning of a search phrase. '?ope' is an illegal search term and will be ignored."
 msgstr "注意通配符不能在搜索短语开头。'?ope' 是非法的搜索词，将被忽略。"
 
@@ -546,7 +546,7 @@ msgstr "血浆分离备注"
 msgid "Please fill out an integer range: 1-365"
 msgstr "请填写一个整数，范围：1-365"
 
-#: ../interfaces.py:1205
+#: ../interfaces.py:1220
 msgid "Please select a new steps."
 msgstr "请选择新步骤"
 
@@ -590,7 +590,7 @@ msgstr "接收操作人"
 msgid "Received phone"
 msgstr "接收人电话"
 
-#: ../browser/templates/search_view.pt:105 ../handlers.py:104
+#: ../browser/templates/search_view.pt:121 ../handlers.py:104
 #: ../interfaces.py:212
 msgid "Received time"
 msgstr "接收时间"
@@ -603,7 +603,7 @@ msgstr "记录过期天数"
 msgid "Record expiration notification user group"
 msgstr "记录过期通知用户组"
 
-#: ../browser/templates/search_view.pt:408 ../interfaces.py:1197
+#: ../browser/templates/search_view.pt:409 ../interfaces.py:1212
 msgid "Redo failed item"
 msgstr "重做失败的条目"
 
@@ -623,12 +623,12 @@ msgstr "结果详情"
 msgid "Result information"
 msgstr "结果信息"
 
-#: ../browser/templates/search_view.pt:362
+#: ../browser/templates/search_view.pt:363
 msgid "Results"
 msgstr "结果"
 
 #: ../browser/search_view.py:69 ../browser/templates/search_view.pt:67
-#: ../interfaces.py:1022
+#: ../interfaces.py:1037
 msgid "Review state"
 msgstr "状态"
 
@@ -640,7 +640,7 @@ msgstr "短信通知"
 msgid "SMS text"
 msgstr "短信内容"
 
-#: ../browser/templates/search_view.pt:262
+#: ../browser/templates/search_view.pt:263
 msgid "Sample"
 msgstr "样本"
 
@@ -652,13 +652,13 @@ msgstr "样本接收备注"
 msgid "Sample number"
 msgstr "样本编号"
 
-#: ../browser/templates/search_view.pt:258
+#: ../browser/templates/search_view.pt:259
 msgid "Sample receiving"
 msgstr "样本接收"
 
 #: ../models/Tumour.xml
 msgid "Sample size"
-msgstr ""
+msgstr "样本量"
 
 #: ../interfaces.py:218
 msgid "Sample size "
@@ -672,7 +672,7 @@ msgstr "样本来源"
 msgid "Sample type"
 msgstr "样本类型"
 
-#: ../browser/templates/search_view.pt:101 ../handlers.py:103
+#: ../browser/templates/search_view.pt:117 ../handlers.py:103
 #: ../interfaces.py:206
 msgid "Sampling time"
 msgstr "采样时间"
@@ -681,7 +681,7 @@ msgstr "采样时间"
 msgid "Save"
 msgstr "保存"
 
-#: ../browser/templates/search_view.pt:454
+#: ../browser/templates/search_view.pt:455
 msgid "Select"
 msgstr "选择"
 
@@ -689,11 +689,11 @@ msgstr "选择"
 msgid "Select the Excel file, click here to ${download} import template file."
 msgstr "选择Excel文件，点击${download}导入模板文件。"
 
-#: ../interfaces.py:1221
+#: ../interfaces.py:1236
 msgid "Select this option if you want the data compression "
 msgstr "选中此项，进行数据压缩"
 
-#: ../browser/templates/search_view.pt:92
+#: ../browser/templates/search_view.pt:108
 msgid "Select time"
 msgstr "选择时间"
 
@@ -701,7 +701,7 @@ msgstr "选择时间"
 msgid "Separation operator"
 msgstr "分离操作人"
 
-#: ../browser/templates/search_view.pt:109 ../interfaces.py:248
+#: ../browser/templates/search_view.pt:125 ../interfaces.py:248
 #: ../models/Tumour.xml
 msgid "Separation time"
 msgstr "分离时间"
@@ -723,7 +723,7 @@ msgstr "测序文件名"
 msgid "Sequencing operator"
 msgstr "测序操作人"
 
-#: ../browser/templates/search_view.pt:124 ../interfaces.py:377
+#: ../browser/templates/search_view.pt:140 ../interfaces.py:377
 #: ../models/Tumour.xml
 msgid "Sequencing time"
 msgstr "测序时间"
@@ -734,9 +734,9 @@ msgstr "性别"
 
 #: ../handlers.py:102
 msgid "State"
-msgstr ""
+msgstr "状态"
 
-#: ../browser/templates/search_view.pt:406 ../interfaces.py:1139
+#: ../browser/templates/search_view.pt:407 ../interfaces.py:1154
 msgid "State transition"
 msgstr "状态转换"
 
@@ -802,12 +802,12 @@ msgstr "模板制备试剂盒批号"
 msgid "Template preparation operator"
 msgstr "模板制备操作人"
 
-#: ../browser/templates/search_view.pt:121 ../interfaces.py:351
+#: ../browser/templates/search_view.pt:137 ../interfaces.py:351
 #: ../models/Tumour.xml
 msgid "Template preparation time"
 msgstr "制备时间"
 
-#: ../browser/import.py:551 ../interfaces.py:53
+#: ../browser/import.py:558 ../interfaces.py:53
 msgid "The URL you have provided could not be reached."
 msgstr "提供的URL无法抵达."
 
@@ -823,12 +823,12 @@ msgstr "数值格式不正确"
 msgid "This time cannot be greater than current time"
 msgstr "此时间不能大于当前时间"
 
-#: ../browser/templates/search_view.pt:173
+#: ../browser/templates/search_view.pt:174
 msgid "This will return objects containing 'word1' and 'word2' or just objects that contain the term 'word3'."
 msgstr "返回包含 'word1' 和 'word2' 的对象，或只包含 'word3' 的对象。"
 
 #. Default: "This will search for all objects that contain both 'word1' and 'word2'."
-#: ../browser/templates/search_view.pt:162
+#: ../browser/templates/search_view.pt:163
 msgid "This will search for all objects that contain both 'word1' and 'word2'. "
 msgstr "将搜索包含 'word1' 和 'word2' 的所有对象。"
 
@@ -896,7 +896,7 @@ msgstr "警告"
 msgid "When the entry has expired, send an email message to inform the user"
 msgstr "当记录过期，发送Email消息通知用户"
 
-#: ../browser/form.py:566 ../interfaces.py:1212
+#: ../browser/form.py:566 ../interfaces.py:1227
 msgid "Workflow state transition"
 msgstr "工作流状态转换"
 
@@ -912,7 +912,7 @@ msgstr "您需要发送的信息"
 msgid "[${warn}] [Tumour] ${count} items Expiration Notification"
 msgstr "[${warn}] [Tumour] ${count} 条过期通知"
 
-#: ../browser/templates/search_view.pt:394
+#: ../browser/templates/search_view.pt:395
 msgid "actions"
 msgstr "操作"
 
@@ -922,10 +922,10 @@ msgstr "cfDNA"
 
 #: ../vocabulary.py:33
 msgid "cfDNA\\RNA"
-msgstr "cfDNA\\RNA"
+msgstr ""
 
 #. Default: "<strong>N</strong> Items will be permanently deleted! Deleted cannot be recovered."
-#: ../browser/templates/search_view.pt:499
+#: ../browser/templates/search_view.pt:500
 msgid "delete-warning"
 msgstr "<strong>N</strong> 条数据将被永久删除！删除无法恢复。"
 
@@ -935,7 +935,7 @@ msgid "description"
 msgstr ""
 
 #. Default: "<strong class=\"_total\">N</strong> items selected, <strong class=\"_same\">N</strong> same library barcode: <br /><span class=\"_bar\"></span>"
-#: ../browser/templates/search_view.pt:529
+#: ../browser/templates/search_view.pt:530
 msgid "dilution-confirm"
 msgstr "<strong class=\"_total\">N</strong> 条数据, <strong class=\"_same\">N</strong> 个重复的文库条码: <br /><span class=\"_bar\"></span>"
 
@@ -943,9 +943,9 @@ msgstr "<strong class=\"_total\">N</strong> 条数据, <strong class=\"_same\">N
 msgid "download"
 msgstr "下载"
 
-#: ../browser/templates/search_view.pt:144
-msgid "end time"
-msgstr "结束时间"
+#: ../browser/templates/search_view.pt:103
+msgid "end date"
+msgstr "结束日期"
 
 #: ../vocabulary.py:30
 msgid "gDNA"
@@ -953,7 +953,7 @@ msgstr "gDNA"
 
 #: ../vocabulary.py:32
 msgid "gDNA\\RNA"
-msgstr "gDNA\\RNA"
+msgstr ""
 
 #: ../browser/configure.zcml:36
 msgid "gene tumour search data"
@@ -972,7 +972,7 @@ msgid "gene.tumour (uninstall)"
 msgstr ""
 
 #. Default: "Enter a comment that describes the changes you made."
-#: ../interfaces.py:1035
+#: ../interfaces.py:1050
 msgid "help_change_note"
 msgstr "输入一个注释，说明您所做的改动。"
 
@@ -982,7 +982,7 @@ msgid "label_cancel"
 msgstr "取消"
 
 #. Default: "Change Note"
-#: ../interfaces.py:1034
+#: ../interfaces.py:1049
 msgid "label_change_note"
 msgstr "更改注释"
 
@@ -1003,9 +1003,9 @@ msgstr "取消操作"
 msgid "result"
 msgstr "结果"
 
-#: ../browser/templates/search_view.pt:137
-msgid "start time"
-msgstr "开始时间"
+#: ../browser/templates/search_view.pt:97
+msgid "start date"
+msgstr "开始日期"
 
 #: ../vocabulary.py:109
 msgid "step1"
@@ -1036,26 +1036,26 @@ msgstr "步骤"
 msgid "time-report"
 msgstr "执行时长：${time_to_duration}"
 
-#: ../browser/templates/search_view.pt:184
+#: ../browser/templates/search_view.pt:185
 msgid "which returns all words that begin with 'Z'"
 msgstr "返回所有以 'Z' 开头的单词"
 
-#: ../browser/templates/search_view.pt:186
+#: ../browser/templates/search_view.pt:187
 msgid "which returns all words that begin with 'Zop' and have one more character - just like in a Un*x shell."
 msgstr "返回所有以 'Zop' 开头且后有一个字符的单词 — — 就像在 Un*x shell中。"
 
-#: ../browser/templates/search_view.pt:164
+#: ../browser/templates/search_view.pt:165
 msgid "which would search for occurrences of 'word1' but would exclude documents which contain 'word2'."
 msgstr "这将搜索包含 word1 但不包含 'word2' 的文档。"
 
-#: ../browser/templates/search_view.pt:211
+#: ../browser/templates/search_view.pt:212
 msgid "will return all objects that contain the terms 'bob' and 'uncle' but will not include any objects that contain words that start with 'Zoo' like 'Zoologist', 'Zoology', or 'Zoo' itself."
 msgstr "将返回包含 'bob' 和 'uncle'，但不包含以 'Zop' 开头的像 Zoologist', 'Zoology', 或 'Zoo' 的所有对象。"
 
-#: ../browser/templates/search_view.pt:215
+#: ../browser/templates/search_view.pt:216
 msgid "will return all objects which contain the word 'snakes' or 'frogs' but do not contain the phrase 'carpet python'."
 msgstr "将返回包含 'snakes' 或 'frogs' 但不包含短语 'carpet python' 的所有对象。"
 
-#: ../browser/templates/search_view.pt:204
+#: ../browser/templates/search_view.pt:205
 msgid "will search for all occurrences of the phrase 'carpet python' or of the word 'frogs'"
 msgstr "将搜索包含短语 'carpet python' 或 单词'frogs' 的所有对象"
