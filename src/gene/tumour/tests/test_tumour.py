@@ -9,7 +9,7 @@ from plone import api
 from gene.tumour.testing import GENE_TUMOUR_INTEGRATION_TESTING  # noqa
 from gene.tumour.interfaces import ITumour
 
-import unittest2 as unittest
+import  unittest
 
 
 class TumourIntegrationTest(unittest.TestCase):

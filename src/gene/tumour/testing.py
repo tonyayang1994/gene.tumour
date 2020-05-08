@@ -13,6 +13,10 @@ class GeneTumourLayer(PloneSandboxLayer):
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
+        import plone.app.contenttypes
+        self.loadZCML(package=plone.app.contenttypes)
+        import plone.app.event.dx
+        self.loadZCML(package=plone.app.event.dx)
         import gene.tumour
         import Products.DateRecurringIndex
         import Products.CMFPlone
@@ -26,8 +30,11 @@ class GeneTumourLayer(PloneSandboxLayer):
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'Products.CMFPlone:plone')
+        applyProfile(portal, 'plone.app.contenttypes:default')
         applyProfile(portal, 'gene.tumour:default')
 
+    def tearDownPloneSite(self, portal):
+        applyProfile(portal, 'plone.app.contenttypes:uninstall')
 
 GENE_TUMOUR_FIXTURE = GeneTumourLayer()
 
