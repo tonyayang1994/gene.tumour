@@ -718,6 +718,21 @@ class IBloodSample(model.Schema):
         max=1.00,
     )
 
+    @invariant
+    def pre_older_after(obj):
+        prev = 'sampling_time'
+        after = 'received_time'
+       
+        prev_value = getattr(obj, prev, None)
+        after_value = getattr(obj, after, None)
+        if after_value is not None:
+            if (prev_value is not None 
+                and isinstance(prev_value, datetime.datetime)
+                and isinstance(after_value, datetime.datetime)
+                and prev_value > after_value):
+                raise Invalid(
+                                _(u'After steps time must be greater than '
+                                  u'or equal to the previous steps time'))
 
 class INAExtraction(model.Schema):
     uuid = schema.TextLine(

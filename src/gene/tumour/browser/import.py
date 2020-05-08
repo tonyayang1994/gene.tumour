@@ -501,7 +501,14 @@ class ImportExcel(BrowserView):
 
     def extract_error(self, errors, row_buffer, step_schema):
         for error in errors:
-            if isinstance(error, tuple):
+            if isinstance(error, tuple) and errors[0][1].__class__.__name__ =='Invalid':
+                error_doc = error[1].message
+                error_doc = translate(_(error_doc),
+                                      context=self.request)
+                field_title = 'Invalid'
+                field_name = 'Invalid'
+                
+            elif isinstance(error, tuple) and errors[0][1].__class__.__name__ !='Invalid':                
                 error_doc = error[1].doc()
                 error_doc = translate(_(error_doc),
                                       context=self.request)
