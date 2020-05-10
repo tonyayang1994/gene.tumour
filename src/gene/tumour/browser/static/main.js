@@ -861,43 +861,6 @@ $(document).ready(function(){
                 $formSearchableText.triggerHandler(key_event);
             });
 
-        $formDateFrom.datepicker({
-            dateFormat: "yy-mm-dd",
-            defaultDate: "-1m",
-            changeMonth: true,
-            numberOfMonths: 2,
-            showAnim: "slideDown",
-            onSelect: function (selectedDate) {
-                if ( $formSearchDate.data('search_date') )
-                {
-                    var key_event = jQuery.Event('keypress', {keyCode: 13});
-                    $formSearchableText.triggerHandler(key_event);
-                }
-            },
-            onClose: function (selectedDate) {
-                $formDateTo.datepicker("option", "minDate", selectedDate);
-            }
-        });
-
-        $formDateTo.datepicker({
-            dateFormat: "yy-mm-dd",
-            defaultDate: "-1m",
-            changeMonth: true,
-            numberOfMonths: 2,
-            showAnim: "slideDown",
-            onSelect: function (selectedDate) {
-                if ( $formSearchDate.data('search_date') )
-                {
-                    var key_event = jQuery.Event('keypress', {keyCode: 13});
-                    $formSearchableText.triggerHandler(key_event);
-                }
-            },
-            gotoCurrent: true,
-            onClose: function (selectedDate) {
-                $formDateFrom.datepicker("option", "maxDate", selectedDate);
-            }
-        });
-
 
         $datable_object
             .on('draw.dt', function () {
@@ -1193,113 +1156,8 @@ $(document).ready(function(){
 
     }
 
-
-    // Import Excel
-    // ============
-/*    $("#form-ImportHelp")
-        .popover({
-            html: true,
-            //title: 'Advanced search instructions'.anchor(),
-            content: $('#popover-ImportHelp').html(),
-            template: '<div class="popover" role="tooltip" style="max-width: inherit; ">' +
-            '<div class="arrow"></div>' +
-            '<h3 class="popover-title"></h3>' +
-            '<div class="popover-content"></div></div>',
-            placement: 'bottom'
-            //viewport: '#form-SearchableText'
-        })
-        .click(function (event) {
-            event.preventDefault();
-        });*/
-
-
-    // Datagridfield
-    // =============
-    //var $batch_list = $('#form-widgets-batch_list');
-    ///**
-    // * Datagridfield
-    // * Change select Missing: value to first option
-    // */
-    //    //$('#form-widgets-batch_list select option:selected').text()
-    //    //$(this).get(0).selectedIndex=1
-    //$batch_list.find('select option:selected').each(function (/*index, element*/) {
-    //    // element == this
-    //    //console.log(index, element);
-    //    var text = $(this).text();
-    //    if (text.search("Missing:") == 0) {
-    //        $(this).parent().get(0).selectedIndex = 0;
-    //    }
-    //});
-
-
-     var $batch_list = $('table[id^="form-tumour"]');  // $('table.datagridwidget-table-view');
-     $batch_list.find('>thead>tr>th[class^="header cell-"]')
-        //.slice(1,-1)
-        .on("dblclick", function (/*event*/) {
-            // $(this).parent().children().index($(this))
-            //var cellIndex = 2 + this.cellIndex;
-            //var $cell_cols = $(this).closest("table").find("tbody>tr>td:nth-child(" + cellIndex + ")>input");
-            var call_n = $(this).prop('class').match(/cell-\d+/)[0];
-            var $cell_cols = $(this).closest("table").find("tbody>tr>td." + call_n + ">input");
-            var $first_cell = $cell_cols.first();
-            var first_value = $cell_cols.first().val();
-            var position = -1;  // disabled! first_value.search(/(\d)+$/);
-            var copy_value = true;
-
-            if(position > -1) {
-              copy_value = false;
-              var prefix = first_value.slice(0, position);
-              var suffix = first_value.slice(position);
-            }
-            $cell_cols.slice(1).each(function (index) {
-              if (copy_value) {
-                this.value = first_value;
-              }
-              else {
-                this.value = prefix + (suffix - -1 + index);
-              }
-            }).add($first_cell).effect( "highlight");
-        })
-        .on("dblclick", function (/*event*/) {
-            var self = this;
-            var call_n = $(this).prop('class').match(/cell-\d+/)[0];
-            var year_month_day = ["year", "month", "day"];
-
-            year_month_day.forEach(function (value, index, array) {
-                var $cell_cols = $(self).closest("table").find("tbody>tr>td." + call_n + ">select." + value);
-                var $first_cell = $cell_cols.first();
-                var first_value = $cell_cols.first().val();
-                $cell_cols.slice(1).each(function (index) {
-                    this.value = first_value;
-                }).add($first_cell).effect( "highlight");
-            });
-
-        })
-        .on("dblclick", function (/*event*/) {
-            var call_n = $(this).prop('class').match(/cell-\d+/)[0];
-            // steps
-            $cell_cols = $(this).closest("table").find("tbody>tr>td." + call_n + ">select.choice-field");
-            $first_cell = $cell_cols.first();
-            first_value = $cell_cols.first().val();
-            $cell_cols.slice(1).each(function (index) {
-                this.value = first_value;
-            }).add($first_cell).effect( "highlight");
-        })
-        .on("dblclick", function (/*event*/) {
-            var call_n = $(this).prop('class').match(/cell-\d+/)[0];
-            // radio button
-            $cell_cols = $(this).closest("table").find("tbody>tr>td." + call_n).has("span.option");
-            $first_cell = $cell_cols.first().find("input[type='radio']:checked");
-            if ( $first_cell.length == 1) {
-                first_value = $first_cell.first().val();
-                $cell_cols.slice(1).each(function (index) {
-                    $(this).find("input[type='radio'][value='" + first_value + "']").prop('checked', true);
-                }).add($first_cell.closest("td." + call_n)).effect( "highlight");
-            }
-        });
-
+     var $batch_list = $('table[id^="form-tumour"]');
      $batch_list.find('span.namedblobfile-field input[value="replace"]').click();
-
 
     function submitForm(action, params) {
         $('#_submitForm').remove();
@@ -1331,6 +1189,5 @@ $(document).ready(function(){
         return val;
     }
 
-//$('[data-submenu]').submenupicker();
 });
 });
