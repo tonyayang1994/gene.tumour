@@ -4,6 +4,7 @@ import logging
 
 from AccessControl import Unauthorized
 from collective.z3cform.datagridfield import DataGridFieldFactory
+from collective.z3cform.datagridfield import BlockDataGridFieldFactory
 from gene.common.utils import make_folder
 from gene.tumour import _
 from gene.tumour import utils
@@ -47,6 +48,7 @@ class BloodSampleAddForm(form.AddForm):
     def __init__(self, context, request):
         super(BloodSampleAddForm, self).__init__(context, request)
         self.request['disable_border'] = True
+        self.request.set('disable_plone.leftcolumn',1)
         self.items = []
 
     _add_permission = 'gene.tumour: Add BloodSample'
@@ -57,7 +59,7 @@ class BloodSampleAddForm(form.AddForm):
     prefix = 'form.tumour.sample.add'
 
     fields = field.Fields(IBloodSampleAddList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
 
     def getContent(self):
         data = {'batch_list': []}
@@ -162,6 +164,7 @@ class BloodSampleEditForm(form.EditForm):
     def __init__(self, context, request):
         super(BloodSampleEditForm, self).__init__(context, request)
         self.request['disable_border'] = True
+        self.request.set('disable_plone.leftcolumn',1)
         self.items = []
         self.new_steps = ''
         self.view_edit_mode = None
@@ -175,7 +178,7 @@ class BloodSampleEditForm(form.EditForm):
     prefix = 'form.tumour.sample'
 
     fields = field.Fields(IBloodSampleList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
     fields_readonly = []
 
     def getContent(self):
@@ -351,7 +354,7 @@ class NAExtractionEditForm(BloodSampleEditForm):
     prefix = 'form.tumour.na'
 
     fields = field.Fields(INAExtractionList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
     fields_readonly = ['sample_no', ]
 
     def updateWidgets(self, prefix=None):
@@ -370,7 +373,7 @@ class LibraryConstructionEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.library'
 
     fields = field.Fields(ILibraryConstructionList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
 
 
 class ComputerDetectingEditForm(NAExtractionEditForm):
@@ -382,7 +385,7 @@ class ComputerDetectingEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.detecting'
 
     fields = field.Fields(IComputerDetectingList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
 
 
 class AnalysisResultsEditForm(NAExtractionEditForm):
@@ -394,7 +397,7 @@ class AnalysisResultsEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.results'
 
     fields = field.Fields(IAnalysisResultsList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
 
 
 class FailedRedoEditForm(BloodSampleEditForm):
@@ -408,7 +411,7 @@ class FailedRedoEditForm(BloodSampleEditForm):
     prefix = 'form.tumour.redo'
 
     fields = field.Fields(IFailedRedoList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
     fields_readonly = ['sample_no', 'barcode', 'name', 'review_state']
 
     def getContent(self):
@@ -496,7 +499,7 @@ class ChangeStepsEditForm(FailedRedoEditForm):
     prefix = 'form.tumour.steps'
 
     fields = field.Fields(IChangeStepsList)
-    fields['batch_list'].widgetFactory = DataGridFieldFactory
+    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
     fields_readonly = ['sample_no', 'barcode', 'name', 'review_state']
 
     def getContent(self):

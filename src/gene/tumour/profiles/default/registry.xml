@@ -8,6 +8,10 @@
 	    <value key="email_notify_enabled">True</value>
         <value key="record_expire_days">7</value>
         <value key="record_expire_notify">ExpiredNotify</value>
+        <value key="detection_plan">
+          <element>TT004-1-结直肠癌基础版(组织)</element>
+          <element>TT004-2-结直肠癌基础版(全血)</element>
+        </value>
   </records> 
 
   <records prefix="plone.resources/tumour-main"

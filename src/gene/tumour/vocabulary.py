@@ -6,6 +6,7 @@ from zope.i18n import translate
 from zope.interface import implementer, provider
 from zope.schema.interfaces import IVocabularyFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+from Products.CMFPlone.utils import safe_unicode
 
 situation_dict = {
     u'surgery': _(u'Surgery'),
@@ -112,3 +113,42 @@ _(u'step3')
 _(u'step4')
 _(u'step5')
 
+@implementer(IVocabularyFactory)
+class DetectionPlan(object):
+
+    def __call__(self,context):
+        
+        plans = api.portal.get_registry_record(
+            'gene.tumour.interfaces.IGeneTumourSettings.'
+            'detection_plan') 
+       
+        if plans is None:
+            return SimpleVocabulary([])
+        
+        def safe_encode(term):
+            if isinstance(term, unicode):
+                # no need to use portal encoding for transitional encoding from
+                # unicode to ascii. utf-8 should be fine.
+                term = term.encode('utf-8')
+            return term
+
+        # Vocabulary term tokens *must* be 7 bit values, titles *must* be
+        # unicode
+        newplans = map(safe_encode,plans)
+        def split_code(item):
+            if "-" not in item: return  item
+            ars = item.split("-")
+            num = len(ars)
+            if num > 2:
+                rs = []
+                for j in range(num -1):
+                    rs .append(ars[j]) 
+                return u"-".join(rs)
+            else:
+                return ars[0]
+
+        items = [
+            SimpleTerm(value=safe_unicode(i),token=split_code(i),title= safe_unicode(i))
+            for i in newplans
+        ]
+        return SimpleVocabulary(items)

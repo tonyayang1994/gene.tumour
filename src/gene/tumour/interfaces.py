@@ -108,6 +108,14 @@ class IGeneTumourSettings(Interface):
             required=True)
     )
 
+    detection_plan = schema.Set(
+        title=_(u"Detection plan"),
+        description=_(u"detection plan ,one word one line"),
+        required=False,
+        default=set(),
+        value_type=schema.TextLine(title=_(u"Detection plan")),
+        )
+    
 
 class ITumour(Interface):
 
@@ -482,9 +490,10 @@ class IBloodSampleAdd(model.Schema):
         required=True,
     )
 
-    inspection_item = schema.TextLine(
+    inspection_item = schema.Choice(
         title=_(u"Inspection item"),
         required=True,
+        vocabulary='gene.tumour.vocabulary.DetectionPlan'
     )
 
     inspection_method = schema.TextLine(
@@ -618,9 +627,15 @@ class IBloodSample(model.Schema):
         required=True,
     )
 
-    inspection_item = schema.TextLine(
+#     inspection_item = schema.TextLine(
+#         title=_(u"Inspection item"),
+#         required=True,
+#     )
+
+    inspection_item = schema.Choice(
         title=_(u"Inspection item"),
         required=True,
+        vocabulary='gene.tumour.vocabulary.DetectionPlan'
     )
 
     inspection_method = schema.TextLine(

@@ -31,5 +31,8 @@
     factory=".vocabulary.ReviewStates"
     name="gene.tumour.vocabulary.review_states"
   />
-
+  <utility
+    factory=".vocabulary.DetectionPlan"
+    name="gene.tumour.vocabulary.DetectionPlan"
+  />
 </configure>
