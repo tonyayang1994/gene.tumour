@@ -16270,6 +16270,29 @@ $(document).ready(function(){
 
         });
 
+        $datable_object
+            .on('draw.dt', function () {
+                $('a._ChangeNote').prepOverlay({
+                    subtype: 'ajax',
+                    cssclass: 'overlay-changenote',
+                    width:'30%',
+                    filter: 'h2, #content',
+                    formselector: 'form[id="ChangeNoteForm"]',
+                    noform: function(el) {return $.plonepopups.noformerrorshow(el, 'close');}
+                });
+            });
+
+
+        $datable_object
+            .on('draw.dt', function () {
+                $('a._ContentHistory').prepOverlay({
+                    subtype: 'ajax',
+                    cssclass: 'overlay-history',
+                    filter: 'h2, #content-history',
+                    urlmatch: '@@historyview',
+                    urlreplace: '@@contenthistorypopup'
+                });
+            });
 
         $data_table.on(/*'order.dt search.dt'*/ 'draw.dt', function () {
             var info = $data_table.page.info();
