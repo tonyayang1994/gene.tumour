@@ -178,7 +178,7 @@ class BloodSampleEditForm(form.EditForm):
     prefix = 'form.tumour.sample'
 
     fields = field.Fields(IBloodSampleList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
     fields_readonly = []
 
     def getContent(self):
