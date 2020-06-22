@@ -9,7 +9,8 @@ require([
   'datatables.net-select',
   'bootstrap-modal-js',
   'jquery.auto-grow-input',
-  'jquery.popupforms'
+  'jquery.popupforms',
+  'bootstrap-submenu'
 ], function($) {
 $(document).ready(function(){
     var $datable_object = $('#tumour_datatable');
@@ -1212,5 +1213,6 @@ $(document).ready(function(){
         return val;
     }
 
+$('[data-submenu]').submenupicker();
 });
 });
