@@ -354,7 +354,7 @@ class NAExtractionEditForm(BloodSampleEditForm):
     prefix = 'form.tumour.na'
 
     fields = field.Fields(INAExtractionList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
     fields_readonly = ['sample_no', ]
 
     def updateWidgets(self, prefix=None):
@@ -373,7 +373,7 @@ class LibraryConstructionEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.library'
 
     fields = field.Fields(ILibraryConstructionList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
 
 
 class ComputerDetectingEditForm(NAExtractionEditForm):
@@ -385,7 +385,7 @@ class ComputerDetectingEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.detecting'
 
     fields = field.Fields(IComputerDetectingList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
 
 
 class AnalysisResultsEditForm(NAExtractionEditForm):
@@ -397,7 +397,7 @@ class AnalysisResultsEditForm(NAExtractionEditForm):
     prefix = 'form.tumour.results'
 
     fields = field.Fields(IAnalysisResultsList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
 
 
 class FailedRedoEditForm(BloodSampleEditForm):
@@ -411,7 +411,7 @@ class FailedRedoEditForm(BloodSampleEditForm):
     prefix = 'form.tumour.redo'
 
     fields = field.Fields(IFailedRedoList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
     fields_readonly = ['sample_no', 'barcode', 'name', 'review_state']
 
     def getContent(self):
@@ -499,7 +499,7 @@ class ChangeStepsEditForm(FailedRedoEditForm):
     prefix = 'form.tumour.steps'
 
     fields = field.Fields(IChangeStepsList)
-    fields['batch_list'].widgetFactory = BlockDataGridFieldFactory
+    fields['batch_list'].widgetFactory = DataGridFieldFactory
     fields_readonly = ['sample_no', 'barcode', 'name', 'review_state']
 
     def getContent(self):
